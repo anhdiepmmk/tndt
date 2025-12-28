@@ -443,6 +443,27 @@ footer {
     opacity: 1;
 }
 
+/* QR Code Boxes */
+.qr-code-box {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.qr-code-box:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-5px);
+}
+
+.qr-code-img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    display: inline-block;
+}
+
+
 /* Animations */
 .reveal {
     opacity: 0;
