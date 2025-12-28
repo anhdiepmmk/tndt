@@ -116,7 +116,48 @@
         <div class="row align-items-center">
             <div class="col-lg-6 mb-4 mb-lg-0 reveal">
                 <div class="position-relative">
-                    <img src="./product-images/1 (28).jpg" alt="About Us" class="img-fluid about-img w-100">
+                    <div id="aboutCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                        data-bs-interval="3000">
+                        <!-- Indicators -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./product-images/1 (28).jpg" alt="About Us" class="img-fluid about-img w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./product-images/1 (1).jpg" alt="Our Facility"
+                                    class="img-fluid about-img w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./product-images/1 (2).jpg" alt="Our Products"
+                                    class="img-fluid about-img w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./product-images/1 (5).jpg" alt="Quality Control"
+                                    class="img-fluid about-img w-100">
+                            </div>
+                        </div>
+                        <!-- Carousel Controls -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#aboutCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#aboutCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-6 ps-lg-5 reveal">
@@ -144,57 +185,62 @@
 
             <div class="row g-4">
                 <!-- Cinnamon -->
-                <div class="col-md-4 reveal">
+                <div class="col-md-6 reveal">
                     <div class="card card-custom h-100">
-                        <img src="./product-images/1 (3).jpg" class="card-img-top" alt="Cinnamon">
+                        <img src="./product-images/1 (4).jpg" class="card-img-top" alt="Cinnamon">
                         <div class="card-body">
                             <h4 class="card-title">Cinnamon (Cassia)</h4>
                             <p class="card-text text-muted">Known worldwide for its strong aroma, high oil content, and
-                                rich flavor.</p>
+                                rich flavor. Vietnamese cinnamon is prized for its superior quality and intense taste.
+                            </p>
+
+                            <h6 class="mt-3 mb-2 fw-bold">Product Forms:</h6>
                             <ul class="check-list">
-                                <li><i class="fas fa-check-circle"></i> Whole sticks, broken, powder</li>
-                                <li><i class="fas fa-check-circle"></i> Natural drying</li>
-                                <li><i class="fas fa-check-circle"></i> High oil & strong fragrance</li>
+                                <li><i class="fas fa-check-circle"></i> Whole sticks (various lengths)</li>
+                                <li><i class="fas fa-check-circle"></i> Broken pieces</li>
+                                <li><i class="fas fa-check-circle"></i> Ground powder</li>
                             </ul>
-                            <small class="text-muted d-block mt-3"><strong>Applications:</strong> Food, beverages,
-                                bakery, pharma.</small>
+
+                            <h6 class="mt-3 mb-2 fw-bold">Quality Features:</h6>
+                            <ul class="check-list">
+                                <li><i class="fas fa-check-circle"></i> Natural sun-drying process</li>
+                                <li><i class="fas fa-check-circle"></i> High essential oil content (3-5%)</li>
+                                <li><i class="fas fa-check-circle"></i> Strong, sweet fragrance</li>
+                                <li><i class="fas fa-check-circle"></i> Rich reddish-brown color</li>
+                            </ul>
+
+                            <small class="text-muted d-block mt-3"><strong>Applications:</strong> Food industry,
+                                beverages, bakery products, pharmaceuticals, essential oil extraction.</small>
                         </div>
                     </div>
                 </div>
 
                 <!-- Star Anise -->
-                <div class="col-md-4 reveal">
+                <div class="col-md-6 reveal">
                     <div class="card card-custom h-100">
-                        <img src="./product-images/1 (6).jpg" class="card-img-top" alt="Star Anise">
+                        <img src="./product-images/1 (7).jpg" class="card-img-top" alt="Star Anise">
                         <div class="card-body">
                             <h4 class="card-title">Star Anise</h4>
-                            <p class="card-text text-muted">Vietnam is one of the world’s leading origins of star anise.
-                            </p>
+                            <p class="card-text text-muted">Vietnam is one of the world's leading origins of star anise.
+                                Our star anise is carefully selected for its perfect shape and potent aroma.</p>
+
+                            <h6 class="mt-3 mb-2 fw-bold">Product Grades:</h6>
+                            <ul class="check-list">
+                                <li><i class="fas fa-check-circle"></i> Whole star (8 petals)</li>
+                                <li><i class="fas fa-check-circle"></i> Broken pieces</li>
+                                <li><i class="fas fa-check-circle"></i> Ground powder</li>
+                            </ul>
+
+                            <h6 class="mt-3 mb-2 fw-bold">Quality Features:</h6>
                             <ul class="check-list">
                                 <li><i class="fas fa-check-circle"></i> Beautiful star shape</li>
-                                <li><i class="fas fa-check-circle"></i> Strong natural aroma</li>
+                                <li><i class="fas fa-check-circle"></i> Strong natural licorice aroma</li>
                                 <li><i class="fas fa-check-circle"></i> Clean, well-dried</li>
+                                <li><i class="fas fa-check-circle"></i> Dark brown color</li>
                             </ul>
-                            <small class="text-muted d-block mt-3"><strong>Applications:</strong> Seasonings, essential
-                                oils, medicine.</small>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Black Cardamom -->
-                <div class="col-md-4 reveal">
-                    <div class="card card-custom h-100">
-                        <img src="./product-images/1 (7).jpg" class="card-img-top" alt="Black Cardamom">
-                        <div class="card-body">
-                            <h4 class="card-title">Black Cardamom</h4>
-                            <p class="card-text text-muted">Delivers a bold smoky aroma, highly valued in cuisine.</p>
-                            <ul class="check-list">
-                                <li><i class="fas fa-check-circle"></i> Large pods</li>
-                                <li><i class="fas fa-check-circle"></i> Strong smoky flavor</li>
-                                <li><i class="fas fa-check-circle"></i> Carefully selected</li>
-                            </ul>
-                            <small class="text-muted d-block mt-3"><strong>Applications:</strong> Cooking, herbal tea,
-                                pharma.</small>
+                            <small class="text-muted d-block mt-3"><strong>Applications:</strong> Cooking seasonings,
+                                essential oil production, traditional medicine, tea blends, liquor flavoring.</small>
                         </div>
                     </div>
                 </div>

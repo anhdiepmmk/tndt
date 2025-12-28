@@ -79,6 +79,13 @@ section {
     background-color: var(--secondary-color);
 }
 
+/* Left-aligned section title */
+.section-title.text-start::after {
+    left: 0;
+    transform: translateX(0);
+}
+
+
 /* Hero Section */
 .hero-section {
     position: relative;
@@ -211,12 +218,59 @@ section {
 
 
 /* About Section */
+#aboutCarousel {
+    height: 400px;
+}
+
+#aboutCarousel .carousel-inner,
+#aboutCarousel .carousel-item {
+    height: 100%;
+}
+
 .about-img {
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     height: 400px;
+    width: 100%;
     object-fit: cover;
 }
+
+/* About Carousel Controls */
+#aboutCarousel .carousel-control-prev-icon,
+#aboutCarousel .carousel-control-next-icon {
+    background-color: transparent;
+    background-size: 100% 100%;
+    width: 15px;
+    height: 15px;
+}
+
+
+#aboutCarousel .carousel-control-prev,
+#aboutCarousel .carousel-control-next {
+    opacity: 0.7;
+}
+
+#aboutCarousel .carousel-control-prev:hover,
+#aboutCarousel .carousel-control-next:hover {
+    opacity: 1;
+}
+
+#aboutCarousel .carousel-indicators {
+    bottom: 10px;
+}
+
+#aboutCarousel .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+}
+
+#aboutCarousel .carousel-indicators button.active {
+    background-color: var(--secondary-color);
+}
+
 
 /* Products */
 .card-custom {
