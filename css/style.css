@@ -115,7 +115,6 @@ section {
     position: absolute;
     top: 40%;
     left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
     color: white;
     z-index: 2;
@@ -188,6 +187,13 @@ section {
     color: var(--white);
 }
 
+/* Allow Bootstrap btn-sm to work with custom button */
+.btn-primary-custom.btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+}
+
+
 .btn-outline-custom {
     background-color: transparent;
     color: white;
@@ -202,6 +208,7 @@ section {
     background-color: var(--white);
     color: var(--text-dark);
 }
+
 
 /* About Section */
 .about-img {
@@ -457,6 +464,12 @@ footer {
 }
 
 /* Responsive */
+@media (max-width: 1024px) {
+    .hero-content {
+        transform: translate(-50%, -50%);
+    }
+}
+
 @media (max-width: 768px) {
     .hero-content h1 {
         font-size: 2.5rem;
