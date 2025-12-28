@@ -107,13 +107,13 @@ section {
     object-fit: cover !important;
     height: 100% !important;
     width: 100% !important;
-    opacity: 0.6;
-    /* Overlay effect */
+    opacity: 1;
+    /* Removed gray overlay */
 }
 
 .hero-content {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -121,6 +121,40 @@ section {
     z-index: 2;
     width: 90%;
     max-width: 800px;
+    padding: 3rem;
+    background: rgba(0, 0, 0, 0.3);
+    /* Semi-transparent dark background */
+    backdrop-filter: blur(8px);
+    /* Blur effect (Glassmorphism) */
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-indicators {
+    bottom: 20px;
+    z-index: 10;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    opacity: 0.8;
+    z-index: 10;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Dark background for arrows */
+    padding: 25px;
+    border-radius: 50%;
+    background-size: 50% 50%;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
 }
 
 .hero-tagline {
@@ -258,7 +292,7 @@ section {
 .process-number {
     font-family: var(--font-heading);
     font-size: 3rem;
-    color: rgba(0, 0, 0, 0.05);
+    color: rgba(0, 0, 0, 0.15);
     position: absolute;
     top: 10px;
     right: 20px;
@@ -271,7 +305,8 @@ section {
     color: white;
 }
 
-.achievements-section h2 {
+.achievements-section h2,
+.achievements-section h3 {
     color: white;
 }
 
@@ -289,6 +324,10 @@ section {
 .cta-section {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../product-images/1 (2).jpg') no-repeat center center/cover;
     text-align: center;
+    color: white;
+}
+
+.cta-section h2 {
     color: white;
 }
 
