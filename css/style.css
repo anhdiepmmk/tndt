@@ -110,27 +110,17 @@ section {
     overflow: hidden;
 }
 
-#heroCarousel {
+.hero-bg {
     position: absolute;
     top: 0;
     left: 0;
-    font-size: 0;
     width: 100%;
     height: 100%;
-}
-
-.carousel-inner,
-.carousel-item {
-    height: 100%;
-    width: 100%;
-}
-
-.carousel-item img {
-    object-fit: cover !important;
-    height: 100% !important;
-    width: 100% !important;
-    opacity: 1;
-    /* Removed gray overlay */
+    background-image: url('../product-images/1 (2).jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
 }
 
 .hero-content {
@@ -153,31 +143,6 @@ section {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
-.carousel-indicators {
-    bottom: 20px;
-    z-index: 10;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-    width: 5%;
-    opacity: 0.8;
-    z-index: 10;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Dark background for arrows */
-    padding: 25px;
-    border-radius: 50%;
-    background-size: 50% 50%;
-}
-
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-    opacity: 1;
-}
 
 .hero-tagline {
     font-size: 1.2rem;
