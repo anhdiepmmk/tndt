@@ -135,8 +135,9 @@ section {
 
 .hero-content {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
     color: white;
     z-index: 2;
@@ -551,13 +552,6 @@ footer {
     height: 100%;
     object-fit: contain;
     border-radius: 50%;
-}
-
-/* Responsive */
-@media (max-width: 1024px) {
-    .hero-content {
-        transform: translate(-50%, -50%);
-    }
 }
 
 @media (max-width: 768px) {
