@@ -376,26 +376,6 @@ section {
     font-weight: 700;
 }
 
-/* Achievements */
-.achievements-section {
-    background-color: var(--primary-color);
-    color: white;
-}
-
-.achievements-section h2,
-.achievements-section h3 {
-    color: white;
-}
-
-.achievements-section .section-title p {
-    color: rgba(255, 255, 255, 0.8);
-}
-
-.achievement-icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    color: var(--secondary-color);
-}
 
 /* CEO Section */
 .ceo-section {
