@@ -397,6 +397,94 @@ section {
     color: var(--secondary-color);
 }
 
+/* CEO Section */
+.ceo-section {
+    background-color: #fff;
+    overflow: visible;
+}
+
+.ceo-image-wrapper {
+    position: relative;
+    padding: 20px;
+}
+
+.ceo-img {
+    border-radius: 15px;
+    z-index: 1;
+    position: relative;
+    max-height: 500px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top; /* Ensure head is not cut off */
+}
+
+.ceo-image-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 80%;
+    background-color: var(--light-bg);
+    border-radius: 15px;
+    z-index: 0;
+}
+
+.ceo-experience-badge {
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    background: var(--primary-color);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 10px 20px rgba(141, 85, 36, 0.3);
+    z-index: 2;
+}
+
+.ceo-experience-badge .number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: var(--font-heading);
+    line-height: 1;
+}
+
+.ceo-experience-badge .text {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.ceo-content h6 {
+    letter-spacing: 3px;
+    color: var(--secondary-color) !important; /* Ensure consistency with site theme */
+}
+
+.ceo-message-text {
+    position: relative;
+}
+
+.ceo-message-text p.lead {
+    font-style: italic;
+    color: var(--primary-color);
+    border-left: 4px solid var(--secondary-color);
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+.ls-1 {
+    letter-spacing: 1px;
+}
+
+.italic {
+    font-style: italic;
+}
+
 /* CTA */
 .cta-section {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../product-images/1 (2).jpg') no-repeat center center/cover;
